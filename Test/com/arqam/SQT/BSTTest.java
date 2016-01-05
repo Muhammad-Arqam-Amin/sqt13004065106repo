@@ -54,5 +54,21 @@ public class BSTTest {
 		assertNotNull("Fail 4th assert in SearchTest method", B.search(7));
 		
 	}
+	 @Test(expected = NullPointerException.class)
+	public void deleteNodeTest() {
+		B.insert(2);
+		B.insert(1);
+		B.insert(3);
+		B.insert(7);
+		
+		assertNotNull("Fail 1st assert in deleteNodeTest method",B.deleteNode(1));
+		assertNotNull("Fail 2nd assert in deleteNodeTest method",B.deleteNode(2));
+		assertNotNull("Fail 3rd assert in deleteNodeTest method",B.deleteNode(3));
+		assertNotNull("Fail 4th assert in deleteNodeTest method",B.deleteNode(7));
+		
+		assertNull("Fail 5th assert in deleteNodeTest method",B.deleteNode(7));
+		assertNull("Fail 6th assert in deleteNodeTest method",B.deleteNode(0));
+		
+	}
 	
 }
