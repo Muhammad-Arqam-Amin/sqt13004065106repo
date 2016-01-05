@@ -29,5 +29,18 @@ public class BSTTest {
 	 B.deleteNode(65);
 	 assertTrue("Fail 3rd assertion in IsEmpty test fale", B.isEmpty());
 	}
+	@Test
+	public void insetTest() {
+		    B.insert(1);
+		    assertNotNull("Fail 1st assert in InsertTest method", B.search(1));
+			B.insert(2);
+			assertNotNull("Fail 2nd assert in InsertTest method", B.search(2));
+			B.insert(3);
+			assertNotNull("Fail 3rd assert in InsertTest method", B.search(3));
+			B.insert(4); 
+			assertNotNull("Fail 4th assert in InsertTest method", B.search(4));
+			B.insert(1); 
+			assertNotNull("Fail 5th assert in InsertTest method", B.search(1));
+	}
 	
 }
