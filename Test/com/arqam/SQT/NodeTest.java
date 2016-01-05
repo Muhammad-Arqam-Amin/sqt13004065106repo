@@ -26,6 +26,10 @@ public class NodeTest {
 		assertTrue("Fail 1st assert incompareToTest", B.compareTo(3)==1);
 		
 	}
+	@Test
+	public void toStringTest(){
+		assertEquals("4",B.toString());
+	}
 
 
 }
