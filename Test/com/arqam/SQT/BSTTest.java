@@ -42,5 +42,17 @@ public class BSTTest {
 			B.insert(1); 
 			assertNotNull("Fail 5th assert in InsertTest method", B.search(1));
 	}
+	@Test
+	public void SearchTest() {
+		B.insert(2);
+		B.insert(1);
+		B.insert(3);
+		B.insert(7);
+		assertNotNull("Fail 1st assert in SearchTest method", B.search(1));
+		assertNotNull("Fail 2nd assert in SearchTest method", B.search(2));
+		assertNotNull("Fail 3rd assert in SearchTest method", B.search(3));
+		assertNotNull("Fail 4th assert in SearchTest method", B.search(7));
+		
+	}
 	
 }
