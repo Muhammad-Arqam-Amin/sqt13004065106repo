@@ -21,5 +21,13 @@ public class BSTTest {
        assertNotNull("BST object initialize fail", Test);   
       
 	}
+	@Test
+	public void isEmptyTest(){
+	 assertTrue("Fail 1st assertion in IsEmpty test fale", B.isEmpty());
+	 B.insert(65);
+	 assertFalse("Fail 2nd assertion in IsEmpty test fale", B.isEmpty());
+	 B.deleteNode(65);
+	 assertTrue("Fail 3rd assertion in IsEmpty test fale", B.isEmpty());
+	}
 	
 }
